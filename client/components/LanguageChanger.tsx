@@ -2,12 +2,12 @@ import { FaChevronDown } from "react-icons/fa";
 import { useState } from "react";
 
 type LanguageChangerProps = {
-  lang: string;
+  lang: string | undefined;
   onChange?: (lang: string) => void;
   changeLangHandler: (lang: string) => void;
 };
 
-const options = ["JavaScript", "TypeScript", "Python", "HTML"];
+const options = ["JavaScript", "TypeScript", "Python", "HTML", "Csharp"];
 
 export default function LanguageChanger({
   lang,
