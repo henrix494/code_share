@@ -8,7 +8,7 @@ const cors_1 = __importDefault(require("cors"));
 const CodeRoute_1 = __importDefault(require("./routers/CodeRoute"));
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://code-share-ivory.vercel.app"],
 }));
 app.use(express_1.default.json());
 app.use("/api/saveCode", CodeRoute_1.default);
