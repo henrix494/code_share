@@ -37,7 +37,7 @@ function App() {
   const handleGetCode = async () => {
     const id = window.location.pathname;
 
-    const data = await fetch(`${baseUrl}/api/saveCode${id}`);
+    const data = await fetch(`${baseUrl}api/saveCode${id}`);
     const json: { doc: { code: string; lang: string; _id: string } } =
       await data.json();
     setEditorOptions({ lang: json.doc.lang, code: json.doc.code });
