@@ -4,7 +4,7 @@ import saveCode from "./routers/CodeRoute";
 const app = express();
 app.use(
   cors({
-    origin: "*",
+    origin: "https://code-share-ivory.vercel.app",
   })
 );
 app.use(express.json());
