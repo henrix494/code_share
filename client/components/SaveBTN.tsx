@@ -6,7 +6,7 @@ export default function SaveBTN({
   editorOptions: { code: string | undefined; lang: string | undefined };
 }) {
   const saveBtnhandler = async () => {
-    const sendUrl = await fetch(`${baseUrl}/api/saveCode`, {
+    const sendUrl = await fetch(`${baseUrl}api/saveCode`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
