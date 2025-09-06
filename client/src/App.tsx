@@ -3,6 +3,7 @@ import { useState } from "react";
 import LanguageChanger from "../components/LanguageChanger";
 import SaveBTN from "../components/SaveBTN";
 function App() {
+  //@ts-expect-error sss
   const [editorValue, setEditorValue] = useState(`<html>
   <head>
     <title>HTML Sample</title>
